@@ -28,4 +28,4 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
       - name: push event to other repo
-        run: curl -XPOST -u "bilalshahzad1392:${{secrets.PAT_TOKEN}}" -H "Accept:application/vnd.github.everest-preview+json" -H "Content-Type:application/json" https://api.github.com/repos/bilalshahzad1392/target-repo/dispatches -d '{"event_type":"event_type","client_payload":{"id":"1"}}'
+        run: curl -XPOST -u "bilalshahzad1392:${{secrets.PAT_TOKEN}}" -H "Accept:application/vnd.github.everest-preview+json" -H "Content-Type:application/json" https://api.github.com/repos/bilalshahzad139/target-repo/dispatches -d '{"event_type":"event_type","client_payload":{"id":"1"}}'
